@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greeting -->
+<category>
+    <pattern>HELLO</pattern>
+    <template>
+        Hello! Welcome to the Tourist Bot. How can I help you today?
+    </template>
+</category>
+
+<!-- Asking about places -->
+<category>
+    <pattern>PLACES TO VISIT IN *</pattern>
+    <template>
+        Some popular tourist places in <star/> include historical monuments, parks, temples, and shopping areas.
+    </template>
+</category>
+
+<!-- Famous place example -->
+<category>
+    <pattern>FAMOUS PLACE IN INDIA</pattern>
+    <template>
+        India has many famous places like the Taj Mahal, Jaipur, Kerala backwaters, and Goa beaches.
+    </template>
+</category>
+
+<!-- Hotels -->
+<category>
+    <pattern>HOTELS IN *</pattern>
+    <template>
+        There are many hotels available in <star/> ranging from budget to luxury. Would you like recommendations?
+    </template>
+</category>
+
+<!-- Food -->
+<category>
+    <pattern>FOOD IN *</pattern>
+    <template>
+        <star/> is known for its delicious local cuisine. You should try regional specialties there!
+    </template>
+</category>
+
+<!-- Directions -->
+<category>
+    <pattern>HOW TO REACH *</pattern>
+    <template>
+        You can reach <star/> by bus, train, or flight depending on your location.
+    </template>
+</category>
+
+<!-- Weather -->
+<category>
+    <pattern>WEATHER IN *</pattern>
+    <template>
+        The weather in <star/> varies by season. It is best to check a weather app for current updates.
+    </template>
+</category>
+
+<!-- Thanks -->
+<category>
+    <pattern>THANK YOU</pattern>
+    <template>
+        You're welcome! Have a great trip 😊
+    </template>
+</category>
+
+<!-- Default fallback -->
+<category>
+    <pattern>*</pattern>
+    <template>
+        I'm sorry, I didn't understand that. Can you please rephrase your question?
+    </template>
+</category>
+
+</aiml>
