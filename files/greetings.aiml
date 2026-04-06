@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
+<think>
+    <set var="response">
+        <callapi response_code_var="response_code">
+            <url></url>
+            <method></method>
+            <query name=""><secret></secret></query>
+            <query name=""></query>
+            <header name=""></header>
+        </callapi>
+    </set>
+    <set var="content">
+        <jsonpath>
+            <path>$.</path>
+            <get var="response"/>
+        </jsonpath>
+    </set>
+</think>
+<condition var="response_code">
+    <li value="200"><get var="content"/></li>
+    <li>ERROR</li>
+</condition>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul><?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 <category>
 <pattern>TELL ME ABOUT *</pattern>
